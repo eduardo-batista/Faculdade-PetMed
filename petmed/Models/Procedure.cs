@@ -17,5 +17,15 @@ namespace petmed.Models
         public virtual Veterinarian Veterinarian { get; set; }
         public virtual Animal Animal { get; set; }
         public Procedure() { }
+
+        public Procedure(string name, string description, string administeredMedication, DateTime date, int animalId, int veterinarianId)
+        {
+            this.Name = name;
+            this.Description = description;
+            this.AdministeredMedication = administeredMedication;
+            this.Date = date;
+            this.AnimalID = animalId;
+            this.VeterinarianID = veterinarianId;
+        }
     }
 }

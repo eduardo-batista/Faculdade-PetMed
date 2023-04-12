@@ -47,7 +47,7 @@ namespace petmed.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Cpf,Phone,Address,BirthDate")] User user)
+        public ActionResult Create([Bind(Include = "ID,Matriculation,Email,Password,Name,Cpf,Phone,Address,BirthDate")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace petmed.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Cpf,Phone,Address,BirthDate")] User user)
+        public ActionResult Edit([Bind(Include = "ID,Matriculation,Email,Password,Name,Cpf,Phone,Address,BirthDate")] User user)
         {
             if (ModelState.IsValid)
             {

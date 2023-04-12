@@ -58,16 +58,6 @@
             @Html.DisplayFor(model => model.BirthDate)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Animals)
-        </dt>
-
-        <dd>
-            @foreach (var animal in ViewBag.Owner.Animals)
-            {
-                <p>@animal.Name</p>
-            }
-        </dd>
     </dl>
 </div>
 <p>

@@ -14,12 +14,12 @@ namespace petmed.Models
         }
         public Owner(string name, string cpf, string phone, string address, DateTime birthDate)
         {
-            Name = name;
-            Cpf = cpf;
-            Phone = phone;
-            Address = address;
-            BirthDate = birthDate;
-            CreatedAt = DateTime.Now;
+            this.Name = name;
+            this.Cpf = cpf;
+            this.Phone = phone;
+            this.Address = address;
+            this.BirthDate = birthDate;
+            this.CreatedAt = DateTime.Now;
         }
     }
 }

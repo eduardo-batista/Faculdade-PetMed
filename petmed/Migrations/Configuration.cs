@@ -22,9 +22,41 @@
                 new User(Name: "Admin", Cpf: "12345678", Phone: "63987675463", Address: "rua tals", BirthDate: DateTime.Now, Matriculation: "123321", Email: "admin@gmail.com", Password: "admin123"),
             };
 
-            users.ForEach(user => context.Users.Add(user));
-
+            users.ForEach(user => context.Users.AddOrUpdate(user));
             context.SaveChanges();
+
+            List<Owner> owners = new List<Owner>
+            {
+                new Owner(name: "Dono", cpf: "12345678", phone: "63987675463", address: "rua tals", birthDate: DateTime.Now)
+            };
+
+            owners.ForEach(owner => context.Owners.AddOrUpdate(owner));
+            context.SaveChanges();
+
+            List<Animal> animals = new List<Animal>
+            {
+                new Animal(name: "Hulk", description: "Cachorro fofo", age: 2, race: "Pinscher", species: "Cão", ownerId: context.Owners.Where(r => r.Cpf == "12345678").First().ID)
+            };
+
+            animals.ForEach(animal => context.Animals.AddOrUpdate(animal));
+            context.SaveChanges();
+
+            List<Veterinarian> veterinarians = new List<Veterinarian>
+            {
+                new Veterinarian(name: "Veterinario", cpf: "12345678", phone: "63987675463", address: "rua tals", birthDate: DateTime.Now, matriculation: "123321", crmv: "121212")
+            };
+
+            veterinarians.ForEach(veterinarian => context.Veterinarians.AddOrUpdate(veterinarian));
+            context.SaveChanges();
+
+            List<Procedure> procedures = new List<Procedure>
+            {
+                new Procedure(name: "castração", description: "tirar testiculos", administeredMedication: "Dipirona", date: DateTime.Now, animalId: context.Animals.Where(r => (r.Owner.Cpf == "12345678" && r.Name == "Hulk")).First().ID, veterinarianId: context.Veterinarians.Where(r => r.Cpf == "12345678").First().ID)
+            };
+
+            procedures.ForEach(procedure => context.Procedures.AddOrUpdate(procedure));
+            context.SaveChanges();
+
         }
     }
 }

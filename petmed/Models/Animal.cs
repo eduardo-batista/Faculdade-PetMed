@@ -20,6 +20,16 @@ namespace petmed.Models
         public Animal()
         {
             this.Procedures = new HashSet<Procedure>();
-        } 
+        }
+
+        public Animal(string name, string description, int age, string race, string species, int ownerId)
+        {
+            this.Name = name;
+            this.Description = description;
+            this.Age = age;
+            this.Race = race;
+            this.Species = species;
+            this.OwnerID = ownerId;
+        }
     }
 }

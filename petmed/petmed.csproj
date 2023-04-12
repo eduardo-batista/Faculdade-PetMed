@@ -201,21 +201,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Owners\Create.cshtml" />
-    <Content Include="Views\Owners\Delete.cshtml" />
-    <Content Include="Views\Owners\Details.cshtml" />
-    <Content Include="Views\Owners\Edit.cshtml" />
-    <Content Include="Views\Owners\Index.cshtml" />
     <Content Include="Views\Animals\Create.cshtml" />
     <Content Include="Views\Animals\Delete.cshtml" />
     <Content Include="Views\Animals\Details.cshtml" />
     <Content Include="Views\Animals\Edit.cshtml" />
     <Content Include="Views\Animals\Index.cshtml" />
-    <Content Include="Views\Users\Create.cshtml" />
-    <Content Include="Views\Users\Delete.cshtml" />
-    <Content Include="Views\Users\Details.cshtml" />
-    <Content Include="Views\Users\Edit.cshtml" />
-    <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Veterinarians\Create.cshtml" />
     <Content Include="Views\Veterinarians\Delete.cshtml" />
     <Content Include="Views\Veterinarians\Details.cshtml" />
@@ -226,6 +216,16 @@
     <Content Include="Views\Procedures\Details.cshtml" />
     <Content Include="Views\Procedures\Edit.cshtml" />
     <Content Include="Views\Procedures\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Owners\Create.cshtml" />
+    <Content Include="Views\Owners\Delete.cshtml" />
+    <Content Include="Views\Owners\Details.cshtml" />
+    <Content Include="Views\Owners\Edit.cshtml" />
+    <Content Include="Views\Owners\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -33,7 +33,6 @@ namespace petmed.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Owner = owner;
             return View(owner);
         }
 
