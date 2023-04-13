@@ -72,9 +72,9 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Apagar" class="btn btn-default" /> |
-            @Html.ActionLink("Voltar", "Index")
-        </div>
+<div class="form-actions no-color">
+    <button class="btn btn-outline-secondary" onclick="location.href='@Url.Action("Index")'">Voltar</button>
+    <input type="submit" value="Apagar" class="btn btn-danger" />
+</div>
     }
 </div>
