@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
@@ -7,7 +8,9 @@ namespace petmed.Models
 {
     public class Veterinarian : Person
     {
+        [DisplayName("Matricula")]
         public string Matriculation { get; set; }
+        [DisplayName("CRMV")]
         public string Crmv { get; set; }
         public virtual ICollection<Procedure> Procedures { get; set; }
 

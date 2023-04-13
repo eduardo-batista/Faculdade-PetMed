@@ -11,16 +11,18 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("PETMED", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar a navegação" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Página Inicial", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Procedimentos", "Index", "Procedures", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Animais", "Index", "Animals", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Donos", "Index", "Owners", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Veterinários", "Index", "Veterinarians", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Usuários", "Index", "Users", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
         </div>
@@ -29,7 +31,6 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
         </footer>
     </div>
 
