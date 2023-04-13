@@ -6,10 +6,10 @@
 
 <h2>Cadastrar Usuário</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Usuário</h4>
         <hr />
@@ -89,3 +89,25 @@
 <div>
     @Html.ActionLink("Voltar", "Index")
 </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Cpf').mask('999.999.999-99');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#Phone').mask('(99) 99999-9999');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#BirthDate').mask('99/99/9999');
+        });
+    </script>
+} 

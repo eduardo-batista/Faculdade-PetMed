@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace petmed.Models
     public class Owner : Person
     {
         [Required]
+        [DisplayName("Data de Cadastro")]
         public DateTime CreatedAt { get; set; }
         public virtual ICollection<Animal> Animals { get; set; }
         public Owner() {
