@@ -1,8 +1,7 @@
-# Web Application in C# (with Entity Framework)
+# Universidade Estadual do Tocantins - UNITINS
 ## Avaliação A1 de Tópicos III - Sistemas de Informação
-### Universidade Estadual do Tocantins - UNITINS
 
-## Sistema de gerenciamento de procedimentos de uma clínica veterinária!
+### Sistema de gerenciamento de procedimentos de uma clínica veterinária!
 Através do sistema é possível gerenciar os animais com seus respectivos donos, os veterinários, os procedimentos a serem feitos e claro, os usuários do sistema.
 
 ## Como executar
