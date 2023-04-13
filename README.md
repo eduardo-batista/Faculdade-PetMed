@@ -2,10 +2,10 @@
 ## Avaliação A1 de Tópicos III - Sistemas de Informação
 ### Universidade Estadual do Tocantins - UNITINS
 
-##Sistema de gerenciamento de procedimentos de uma clínica veterinária!
+## Sistema de gerenciamento de procedimentos de uma clínica veterinária!
 Através do sistema é possível gerenciar os animais com seus respectivos donos, os veterinários, os procedimentos a serem feitos e claro, os usuários do sistema.
 
-##Como executar
+## Como executar
 OBS: É necessário a instalação do Visual Studio 2022 e Microsoft SQL Server Management Studio.
 
 1 - Sincronize seu Visual Studio com o repositório.
