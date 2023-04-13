@@ -15,6 +15,23 @@ namespace petmed.Controllers
     {
         private ProjectContext db = new ProjectContext();
 
+        public ActionResult Login(string email, string password)
+        {
+            User user;
+            if (email == null || password == null)
+            {
+                return View();
+            } else
+            {
+                user = db.Users.Where(u => u.Email == email && u.Password == password).FirstOrDefault();
+                if (user != null)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            return View();
+        }
+
         // GET: Users
         public ActionResult Index()
         {
